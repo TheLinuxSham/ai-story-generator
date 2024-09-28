@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Use Cases Generator</title>
+  <link rel="stylesheet" href="static/main.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="header_logo">
+      <img src="static/HNU_Logo_1_pos_RGB_digital-1518682059.jpg" alt="Hochschule Neu-Ulm Logo">
+    </div>
+    <div class="header_title">
+      <h1>User Stories Generator</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="project_info">
+      <h1>Data Science Project Sommersemester 2024</h1>
+      <p>Dies ist ein Projekt vom Data Science Management Student an der Hochschule Neu-Ulm. Es können Personas/Problembeschreibungen
+        als PDF-Dateien hochgeladen, oder direkt als Text eingeben werden. Damit lassen sich User Stories generiert. Das Ganze funktioniert mit einer
+        Künstlichen Intelligenz in Form eines Large Language Models (LLM).</p>
+    </section>
+
+    <section class="upload_section">
+      <h1>Upload</h1>
+      <p>Hier können Personas/Problembeschreibungen im PDF Format hochgeladen werden. Das Hochladen von mehreren Dateien gleichzeitig ist möglich.</p>
+      <form action="/input/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" multiple />
+        <input type="submit" value="Upload" />
+      </form>
+      <br>
+      <p>Der Text für eine Persona/Problembeschreibung kann auch manuell eingefügt werden.</p>
+      <form action="/input/text" method="POST">
+        <textarea name="text" placeholder="Persona hier einfügen"></textarea>
+        <input type="submit" value="Text Einfügen" />
+      </form>
+    </section>
+
+    <section class="file_management">
+      <h1>Hochgeladene Dateien</h1>
+      <p>Hier ist die Checkliste mit den Dateien die bereits hochgeladen wurden. Dateien können gelöscht oder ausgelesen werden.</p>
+      <form action="/backend/manage/files" method="POST">
+        {% for filename in filenames %}
+        <label>
+          <input type="checkbox" name="filename_checkbox" value="{{ filename }}">
+          {{ filename }}
+        </label><br>
+        {% endfor %}
+        <button type="submit" name="filenamesSelection" value="deleteFile">Löschen</button>
+        <button type="submit" name="filenamesSelection" value="parseFile">Auslesen</button>
+      </form>
+    </section>
+
+    <section class="parsed_text">
+      <h1>Ausgelesener Text</h1>
+      <p>Hier wird der Text angezeigt, mit dem aktuell User Stories generiert werden kann. Man kann unerwünschten
+        Text selektieren und entfernen.</p>
+      <form action="/backend/manage/personas" method="POST">
+        {% for persona in personas %}
+        <label>
+          <input type="checkbox" name="persona_checkbox" value="{{ persona }}">
+          {{ persona }}
+        </label><br>
+        {% endfor %}
+        <button type="submit" name="parsedTextSelection" value="delete">Löschen</button>
+      </form>
+    </section>
+
+    <section class="user_stories">
+      <h1>User Stories</h1>
+      <p>Mit Generieren werden alle eingegebenen Texte bearbeitet und User Stories erschaffen. Bei Bedarf kann die Website auch aktualisiert werden, um aktuellen Inhalt neu zu laden.</p>
+      <p>Beim Generieren der Website ist es normal einen Ladevorgang zu erkennen. Wenn der Vorgang abgeschlossen ist, aktualisiert sich die Website automatisch mit dem neuesten Inhalt.</p>
+      <form action="/backend/llm/generate_text" method="GET">
+        <button name="get_llm" type="submit">Generieren</button>
+      </form>
+      <form action="/backend/llm/generate_text" method="POST">
+        <button name="post_llm" type="submit">Aktualisieren</button>
+      </form>
+      <br>
+      <p>Bereits generierte User Stories werden unten in Form einer Checkliste angezeigt. Diese können bei Bedarf selektiert und neu generiert, oder gelöscht
+        werden.</p>
+      <form action="/backend/manage/user_stories" method="POST">
+        {% for user_story in user_stories %}
+        <label>
+          <input type="checkbox" name="user_story_checkbox" value="{{ user_story }}">
+          {{ user_story }}
+        </label><br>
+        {% endfor %}
+        <button type="submit" name="userStorySelection" value="delete">Selektion Löschen</button>
+        <button type="submit" name="userStorySelection" value="regenerate">Selektion Neu Generieren</button>
+      </form>
+      <form action="/backend/download/txt" method="GET">
+        <br>
+        <p>Alle Ergebnisse als TXT herunterladen.</p>
+        <button type="submit">Download</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>

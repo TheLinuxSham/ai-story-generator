@@ -1,0 +1,13 @@
+Was möchtest du wissen?
+>>>Bitte geb mir eine Persona zu folgender Person: Name Clarissa, Beruf Krankenpflegerin, Alter 29 Jahre. In der Persona soll beschrieben werden, welche Herausforderungen Sie in Ihrem Beruf hat und was sie gerne, macht. Oder was Sie nicht gerne macht. Gib mir am Anfang die Punkte zur Person und dann einen Fließtext über die Probleme im Beruf.
+
+
+Punkte zur Person:
+Name: Clarissa
+Beruf: Krankenpflegerin
+Alter: 29 Jahre
+Hobbys/Familienstand: Keine Angaben
+Lebensziel: Eine erfüllende Karriere in der Gesundheitsbranche zu haben und dabei anderen Menschen helfen zu können.
+Herausforderungen im Job: Aufgrund ihrer körperlichen Anstrengung hat sie oft Rückenschmerzen und fühlt sich erschöpft nach einem langen Arbeitstag. Zudem ist der Umgang mit den Patienten emotional belastend, da Clarissa nicht jedem helfen kann.
+Was sie gerne macht: Ihre Arbeit als Krankenpflegerin erfüllt sie mit Freude, wenn sie anderen Menschen helfen kann und sie auf ihrem Genesungsweg begleiten darf.
+Was sie nicht gerne macht: Unangenehme Pflegeaufgaben wie das Reinigen von Patientenzimmern oder die Verabreichung von Medikamenten bereitet Clarissa wenig Freude und stellen für

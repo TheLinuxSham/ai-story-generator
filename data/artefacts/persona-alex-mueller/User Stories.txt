@@ -1,0 +1,14 @@
+User Stories
+
+User Stories Alex Müller
+.
+
+Als Softwareentwickler möchte ich die Möglichkeit haben, die Konfiguration der Suchprompts anzupassen, um meine Suche nach spezifischen Informationen in den Personas zu verfeinern und relevante User Stories zu generieren.
+
+Als Softwareentwickler möchte ich eine Echtzeitvorschau der generierten User Stories haben, um sicherzustellen, dass die von mir konfigurierten Prompts die gewünschten Ergebnisse liefern und die Qualität der Stories beurteilen.
+
+Als Softwareentwickler möchte ich die Möglichkeit haben, die generierten User Stories zu bewerten und Feedback zu geben, um die Qualität der Ergebnisse kontinuierlich zu verbessern und sicherzustellen, dass sie meine Anforderungen erfüllen.
+
+Als Softwareentwickler möchte ich eine einfache Möglichkeit haben, die generierten User Stories in mein Projektmanagement-Tool zu integrieren, um den Entwicklungsprozess zu erleichtern und sicherzustellen, dass die Anforderungen der Personas berücksichtigt werden.
+
+Als Softwareentwickler möchte ich regelmäßige Updates und Verbesserungen des Systems haben, um sicherzustellen, dass ich Zugang zu den neuesten Funktionen und Technologien habe, die mir helfen, bessere User Stories zu generieren und meine Produktivität zu steigern.

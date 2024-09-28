@@ -1,0 +1,13 @@
+Was möchtest du wissen?
+>>>Bitte geb mir eine Persona zu folgender Person: Name Clarissa, Beruf Krankenpflegerin, Alter 29 Jahre. In der Persona soll beschrieben werden, welche Herausforderungen Sie in Ihrem Beruf hat und was sie gerne, oder nicht gerne, macht.
+
+E-mail adress: clarissa@example.com
+
+Persona:
+Clarissa ist eine engagierte Krankenpflegerin mit mehr als sieben Jahren Erfahrung in der Intensivmedizin. Sie ist für die Überwachung und Pflege von Patienten verantwortlich, führt diagnostische Tests durch und behandelt komplexe medizinische Probleme.
+
+Hintergrund:
+Clarissa hat einen Bachelor-Abschluss in Krankenpflege und ist seit 2015 im Krankenhaus tätig. Sie begann ihre Karriere auf der Allgemeinstation, wechselte aber bald zur Intensivmedizin, wo sie eine hohe Arbeitsbelastung und komplexe medizinische Situationen gewohnt ist.
+
+Herausforderungen:
+Trotz ihrer Erfahrung findet Clarissa die ständige Weiterbildung anspruchsvoll, da das medizinische Wissen schnelllebig ist und sich kontinuierlich weiterentwickelt. Die Arbeit auf der Intensivstation er
